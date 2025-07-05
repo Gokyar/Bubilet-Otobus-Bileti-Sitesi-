@@ -1,2 +1,3 @@
 # Bubilet-Otobus-Bileti-Sitesi-
-Bu projemizde; kullanıcının kendine uygun otobüs bileti arayıp bulduktan sonra satın almasını hedef alıyoruz. 
+Bu projemizde; kullanıcının kendine uygun otobüs bileti arayıp bulduktan sonra satın almasını hedef alıyoruz. Kullanıcı ilk olarak kalkış-varış yerlerini girdikten sonra istediği tarihi girerek sefer sorgular. Veritabanından gelen bilgilerle uygun seferler kullanıcıya gösterilir. Gösterilen seferlerden birisi seçildikten sonra koltuk seçimi ve cinsiyet yapılması istenir. Gerekli bilgiler girildikten sonra ödeme sayfasına gönderilir. Ödeme sayfasında kullanıcının diğer bilgileri girilir. Buradan sonra ödeme yapılır. 
+Buraya kadar yapılanlar; kullanıcı kaydı ve girişi yapılmadan yapılabilenler işlemlerdir. Kullanıcı kaydı yapıldıktan sonra kredi kart kaydetme ve önceki seferleri görüntüleme gibi ekstra özellikler eklenir.
