@@ -1,0 +1,620 @@
+/*-------------------------------------*/
+/*---------------ANASAYFA--------------*/
+/*-------------------------------------*/
+body {
+    background-image: url('../Resimler/arka_plan.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 40px;
+    font-family: monospace;
+}
+
+.menu_anasayfa {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu_uye {
+    display: flex;
+    gap: 50px;
+    font-size: 23px;
+
+}
+
+.dropdown button {
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    border: none;
+    font-size: 25px;
+}
+
+
+/*--------------------------------------*/
+/*---------------ÜYE GİRİŞ--------------*/
+/*--------------------------------------*/
+.login {
+    display: block;
+    width: 500px;
+    height: 500px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: auto;
+    font-family: monospace;
+    backdrop-filter: blur(4px);
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+    margin: auto;
+}
+
+.login a:hover {
+    color: turquoise;
+    text-decoration: underline;
+}
+
+.form1 {
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+
+.form1 h1 {
+    font-weight: normal;
+    margin-bottom: 60px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+}
+
+.form1 label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+
+}
+
+
+.form1 input,
+.form1 select {
+    background: rgba(255, 255, 255, 0.3);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    border-bottom: 20px;
+    color: white;
+}
+
+.form1 select option {
+    color: black;
+}
+
+.form1 button {
+    background: rgb(255, 255, 255);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    color: black;
+}
+
+.rddiv {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.signin {
+    display: none;
+    width: 500px;
+    height: 500px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: auto;
+    font-family: monospace;
+    backdrop-filter: blur(4px);
+}
+
+/*-----------------------------------------*/
+/*---------------SEYAHAT BUL---------------*/
+/*-----------------------------------------*/
+
+.sorgu {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    font-family: monospace;
+    text-align: center;
+}
+
+.sorgu label,
+.sorgu input {
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 0;
+}
+
+.sorgu input:focus {
+    outline: none;
+}
+
+.sorgu table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 20px;
+}
+
+.sorgu table td {
+    width: 25%;
+    padding: 8px;
+}
+
+
+.seyahatler {
+    background-color: white;
+    width: 90%;
+    border-radius: 5px;
+    margin: 2px auto;
+    font-family: monospace;
+    text-align: center;
+}
+
+.seyahatler table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 20px;
+}
+
+.seyahatler table td {
+    width: 28%;
+    padding: 8px;
+}
+
+.seyahatler table td button {
+    width: 100px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px;
+    padding: 5px;
+}
+
+.koltuk_sec {
+    background-color: white;
+    width: 90%;
+    height: 0;
+    margin: auto;
+    font-family: monospace;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+.koltuk_sec_goster {
+    width: 90%;
+    height: 250px;
+    margin: auto;
+}
+
+.koltuk_sec table {
+    width: 800px;
+    height: 0;
+    display: none;
+    background-image: url('../Resimler/otobus.jpg');
+    background-size: cover;
+    transition: all 0.5s ease;
+    margin: auto;
+}
+
+.otobus {
+    width: 800px;
+    height: 300px;
+    background-image: url('../Resimler/otobus.jpg');
+    background-size: cover;
+    margin: auto;
+}
+
+.koltuk {
+    background-image: url('../Resimler/koltuk.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.koltuk_sec td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+td button {
+    border: 0px;
+    background-color: transparent;
+}
+
+td button:focus {
+    outline: none;
+}
+
+.butonlar{
+    display: none;
+    width: 100px;
+    height: 0;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    margin: 0 auto; 
+    border: 0;
+}
+
+.butonlar_goster{
+    width: 90%;
+    height: auto;
+    border: 0;
+    background-color: white;
+    margin: auto;
+}
+
+.butonlar table {
+    margin: auto;
+    text-align: center;
+}
+
+.butonlar table tr td {
+    padding: 10px;
+}
+
+.cinsiyet {
+    border-radius: 5px;
+    border: 0px;
+    padding: 8px;
+}
+
+#cinsiyet,
+#koltuk_no {
+    border: 0px;
+    width: 50px;
+}
+
+#cinsiyet:focus,
+#koltuk_no:focus {
+    outline: none;
+}
+
+.vazgec_btn{
+    background-color: tomato;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.odeme_btn{
+    background-color: lightgreen;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+
+/*--------------------------------------*/
+/*---------------ÜYE BİLGİ--------------*/
+/*--------------------------------------*/
+.uye_bilgi {
+    width: 50%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: monospace;
+    margin: auto;
+    color: white;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+}
+
+.div_uye {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+}
+
+.div_uye label {
+    flex: 0 0 150px;
+    text-align: right;
+
+}
+
+.div_uye input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    /*box-sizing: border-box;*/
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.guncelle {
+    width: 70%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: monospace;
+    margin: 0 auto;
+    font-family: monospace;
+    backdrop-filter: blur(4px);
+    align-items: center;
+}
+
+.guncelle input {
+    border-radius: 5px;
+    border: 1px solid #b4b4b4;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    font-size: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+    font-family: monospace;
+    color: black;
+
+}
+
+.guncelle button {
+    font-family: monospace;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 50px;
+    font-size: 20px;
+    padding: 8px;
+    background-color: transparent;
+    color: white;
+}
+
+.guncelle button:hover {
+    text-decoration: underline;
+    color: turquoise;
+}
+
+.sifre_gnc {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+}
+
+.sifre_gnc input {
+    display: flex;
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.sifre_gnc div button {
+    flex: 1;
+    font-family: monospace;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin-bottom: 50px;
+    font-size: 15px;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    padding: 8px;
+}
+
+/*--------------------------------------*/
+/*---------------BİLETLERİM-------------*/
+/*--------------------------------------*/
+.biletlerim {
+    background-color: white;
+    width: 90%;
+    background-position: center;
+    margin: 2px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.biletlerim table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.biletlerim table tr td {
+    width: 14.5%;
+    padding: 8px;
+    
+}
+
+/*--------------------------------------*/
+/*---------------KARTLARIM--------------*/
+/*--------------------------------------*/
+.kartlarim {
+    background-color: white;
+    width: 90%;
+    background-position: center;
+    margin: 2px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.kartlarim table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.kartlarim table td {
+    width: 33.33%;
+    padding: 8px;
+}
+
+.kartlarim button {
+    width: 100px;
+    border-radius: 3px;
+    border: 1px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.kart_ekle_sil {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.kart_ekle_sil button {
+    font-family: monospace;
+    border-radius: 3px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+
+
+/*----------------------------------*/
+/*---------------ÖDEME--------------*/
+/*----------------------------------*/
+
+.odeme {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.bilgiler1 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.bilgiler1 div table tr td input {
+    border: 0;
+    background-color: white;
+    width: 150px;
+}
+
+.tarih_saat td input {
+    padding:0;
+    margin-left: 8px;
+}
+
+
+.odeme input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+
+.kart_sec {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.kart_sec table {
+    margin: auto;
+}
+
+.kart_sec table tr td {
+    padding: 10px;
+}
+
+.kart_secimi {
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.kayit_kart {
+    background-color: transparent;
+    border: 0;
+    font-size: 15px;
+}
+
+.kayit_kart:hover {
+    text-decoration: underline;
+    color: darkblue;
+
+}
+
+.odeme_yap {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.odeme_yap button {
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 20px;
+    width: 300px;
+}
+
+.odeme_btn {
+    background-color: lightgreen;
+}
+
+.kullanici_info:hover{
+    background-color: lightgray;
+    border-radius: 5px;
+}
